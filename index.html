@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="lib/css/bootstrap.css">
     <link rel="stylesheet" href="lib/css/bootstrap-responsive.css">
+    <link rel="manifest" href="./manifest.json">
     <script src="lib/js/jquery.js"></script>
     <script src="js/common.js"></script>
     <script src="lib/js/bootstrap.js"></script>
     <script src="lib/js/Chart.bundle.js"></script>
+     <script>
+    // service workerが有効なら、service-worker.js を登録します
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
+   }
+  </script>
 </head>
 
 <body>
