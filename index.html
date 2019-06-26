@@ -1,44 +1,355 @@
-<!-- index.html -->
-<html>
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="ja">
 <head>
-  <!-- manifest.jsonを呼び出しています -->
-  <link rel="apple-touch-icon" href="./icon-192.png" sizes="192×192">
-  
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-  
-  <link rel="apple-touch-startup-image" href="./icon-lun.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-
-  <link rel="manifest" href="./manifest.json">
-  <script>
-    // service workerが有効なら、service-worker.js を登録します
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
-   }
-  </script>
-  <title>Hello PWA.</title>
-  <style>
-    body {
-      text-align:center;
-      font-size: 40px;
-      vertical-align: middle;
-    }
-    .image {
-      width: 80%; 
-      margin: auto;
-      display: block;
-    }
-  </style>
+    <title>Yamaguppy31</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
-<body>
-  <h1>TEST</h1>
-  <img src="./pwa-logo.svg" alt="PWA logo" class="image" />
-<!--   <a href="p.html">p.html</a> -->
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Intro -->
+    <section class="intro">
+        <header>
+            <h1>Yamaguppy31</h1>
+            <p>portfolio by
+                <a class="github-button" href="https://github.com/yamaguppy31" aria-label="Follow @yamaguppy31 on GitHub">@yamaguppy31</a>
+            </p>
+
+            <ul class="actions">
+                <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <span class="image fill" data-position="center"><img src="images/pic01.jpg" alt=""/></span>
+        </div>
+    </section>
+    <section  id="first">
+        <header>
+            <h2>Profile</h2>
+        </header>
+        <div class="content">
+            <p>猫と二人暮らしフリーランスシステムエンジニア</p>
+            <p>開発チーム立ち上げ時の基盤作成、共通ロジック作成が得意（好き)</p>
+
+        </div>
+    </section>
+    <!-- Section -->
+    <section>
+        <header>
+            <h2>history</h2>
+        </header>
+        <div class="content">
+            <ul>
+                <li><strong>会社員</strong></li>
+                <ul>
+                    <li>社内iosアプリ 社内開発 1か月 <p>Swift/mBaas.etc</p></li>
+                    <li>清掃会社基幹システム 社内開発 6か月 <p>PHP/Laravel5.5/jQuery/Materialize/PostgreSQL.etc</p></li>
+                    <li>化粧品会社基幹システム/接客ツール 客先常駐 10か月 <p>PHP/CodeIgniter/BootStrap3/jQuery/PostgreSQL.etc</p></li>
+                    <li>マッサージ会社基幹システム/接客ツール 社内開発 2か月 <p>PHP/Cake3/MySQL.etc</p></li>
+                </ul>
+                <li><strong>個人事業主</strong></li>
+                <ul>
+                    <li><strong>エージェント様経由受注</strong></li>
+                    <ul>
+                        <li>物流基幹システム　6か月 <p>PHP/AWS/CodeIgniter/BootStrap/jQuery/PostgreSQL.etc</li>
+                        <li>EDI 参画中　<p>PHP/AWS/Laravel/jQuery/PostgreSQL.etc</p></li>
+                    </ul>
+
+                    <li><strong>個人受注</strong></li>
+                    <ul>
+                        <li>ECサイト購入支援サイト 6か月　<P>PHP/GCP/PostgreSQL/Materialize/jQuery</P></li>
+                        <li>お茶/造園業者基幹PKG 6か月　<p>PHP/AWS/PostgreSQL/BootStrap/jQuery</p></li>
+                    </ul>
+                </ul>
+                <li><strong>個人開発</strong></li>
+                <ul>
+                    家計簿アプリ（LINE連携)/Twitter自動検索TOOl(Twitter連携)/業務基幹システムPKG開発/環境構築自動化ツール/Composer Package開発/jQueryライブラリ開発
+                </ul>
+            </ul>
+            <span class="image main"><img src="images/pic02.jpg" alt=""/></span>
+        </div>
+    </section>
+    <section>
+        <header>
+            <h2>SKILL OVERVIEW</h2>
+        </header>
+        <div class="content">
+            <p>
+            <ul>
+                <li>個人で基幹システム、ECサイト等の構築、導入が可能。(VPC,LoadBalancer,EC2,RDS)</li>
+                <li>PHP、Laravelの品質に自信あり（お客様からの評価も高い)</li>
+                <li>SQLについてもパフォーマンスを意識したコーディングが可能(SQLチューニング対応可能)</li>
+            </ul>
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section>
+        <header>
+            <h2>SKILL DETAIL</h2>
+        </header>
+        <div class="content">
+
+                <table>
+                    <tr>
+                        <td>
+                            <li><strong>PHP</strong></li>
+                            <p>7.3/7.2/7.1/5.x
+                            <br>Composer
+                                <br>Packagist
+                            </p>
+
+                        </td>
+                        <td>
+                            <li><strong>PHP-FRAMEWORK</strong></li>
+                            <p>
+                                Laravel5.5/5.8
+                                <br>Laravel-Admin
+                                <br>CodeIgniter3
+                                <br>Cake3
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><strong>DB</strong></li>
+                            <p>
+                                PostgreSQL10.x/9.x
+                                <br>MySQL
+                            </p>
+                        </td>
+                        <td>
+                            <li><strong>CLOUD</strong></li>
+                            <p>
+                                AmazonWebService
+                                <br>GoogleCloudPlatform
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><strong>JS</strong></li>
+                            <p>
+                                ECMAScript6
+                                <br>jQuery/UI
+                                <br>その他プラグイン多数
+                                <br>plugin開発
+                            </p>
+                        </td>
+                        <td>
+                            <li><strong>CSS</strong></li>
+                            <p>
+                                bootstrap2.x/3.x/4.0
+                                <br>Materialize
+                                <br>Sass
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><strong>VCS</strong></li>
+                            <p>Git
+                                <br>Subversion
+                            </p>
+                        </td>
+                        <td>
+                            <li><strong>Tool</strong></li>
+                            <p>
+                            PhpStorm
+                                <br>SOURCE TREE
+                                <br>Red Mine
+                                <br>Jira
+                                <br>Backlog
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><strong>OS</strong></li>
+                            <p>
+                              macOS
+                                <br>Windows7/8/20
+                                <br>CentOS6/7
+                                <br>AmazonLinux1/2
+                            </p>
+                        </td>
+                        <td>
+                            <li><strong>OTHER LANGUAGE</strong></li>
+                            <p>
+                                bash
+                                <br>Swift
+                                <br>Java
+                                <br>Ruby
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><strong>ITEM</strong></li>
+                                <p>
+                                    トラックボール（Elecom)
+                                    <br>分離キーボード(Mistel barocco)
+                                    <br>ウルトラワイドモニター
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </section>
+
+    <!-- Section -->
+<!--    <section>-->
+<!--        <header>-->
+<!--            <h2>Project</h2>-->
+<!--        </header>-->
+<!--        <div class="content">-->
+<!--            <p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>-->
+
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section>-->
+<!--                <header>-->
+<!--                    <h3>Erat aliquam</h3>-->
+<!--                    <p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt ipsum suspendisse ultrices gravida.</p>-->
+<!--                </header>-->
+<!--                <div class="content">-->
+<!--                    <div class="gallery">-->
+<!--                        <a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt=""/></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section>-->
+<!--                <header>-->
+<!--                    <h3>Nisl consequat</h3>-->
+<!--                    <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>-->
+<!--                </header>-->
+<!--                <div class="content">-->
+<!--                    <div class="gallery">-->
+<!--                        <a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt=""/></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section>-->
+<!--                <header>-->
+<!--                    <h3>Lorem gravida</h3>-->
+<!--                    <p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>-->
+<!--                </header>-->
+<!--                <div class="content">-->
+<!--                    <div class="gallery">-->
+<!--                        <a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt=""/></a>-->
+<!--                        <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt=""/></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+
+<!--        </div>-->
+<!--    </section>-->
+
+    <!-- Section -->
+<!--    <section>-->
+<!--        <header>-->
+<!--            <h2>Duis sed adpiscing veroeros amet</h2>-->
+<!--        </header>-->
+<!--        <div class="content">-->
+<!--            <p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>-->
+<!--            <ul class="actions">-->
+<!--                <li><a href="#" class="button primary large">Get Started</a></li>-->
+<!--                <li><a href="#" class="button large">Learn More</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+    <!-- Section -->
+    <section>
+        <header>
+            <h2>Get in touch</h2>
+        </header>
+<!--        <div class="content">-->
+<!--            <p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>-->
+<!--            <form>-->
+<!--                <div class="fields">-->
+<!--                    <div class="field half">-->
+<!--                        <input type="text" name="name" id="name" placeholder="Name"/>-->
+<!--                    </div>-->
+<!--                    <div class="field half">-->
+<!--                        <input type="email" name="email" id="email" placeholder="Email"/>-->
+<!--                    </div>-->
+<!--                    <div class="field">-->
+<!--                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <ul class="actions">-->
+<!--                    <li><input type="submit" value="Send Message" class="button primary"/></li>-->
+<!--                </ul>-->
+<!--            </form>-->
+<!--        </div>-->
+        <footer>
+            <ul class="items">
+                <li>
+                    <h3>Email</h3>
+                    <a href="#">information@untitled.ext</a>
+                </li>
+<!--                <li>-->
+<!--                    <h3>Phone</h3>-->
+<!--                    <a href="#">(000) 000-0000</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <h3>Address</h3>-->
+<!--                    <span>1234 Somewhere Road, Nashville, TN 00000</span>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <h3>Elsewhere</h3>-->
+<!--                    <ul class="icons">-->
+<!--                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+<!--                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+<!--                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
+<!--                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>-->
+<!--                        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+<!--                        <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="#">dai.yamaguchi</a>.</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<!--github button-->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--twitter button-->
+
 </body>
 </html>
